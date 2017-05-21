@@ -13,7 +13,6 @@ process. After the package installation, open the sgbd, import the database and 
 After all this you can get acess to the system. To do, just type localhost/logicando in your preffered browser.
 
 Credits
-
 ====================
 
 This application wasn't built alone. Vítor Luís G, Bruno V. Ventura and Tchr. Alisson Rodrigo dos Santos they made part of my development
