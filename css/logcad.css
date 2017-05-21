@@ -1,0 +1,461 @@
+
+/*Criado por Logicando. */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch);
+
+/* ----------------------------------------------------------------------- */
+/* Normatização do documento */
+/* ----------------------------------------------------------------------- */
+
+body {
+    font-size: 62.5%; /* Colocando o tamanho da fonte padrão igual a 62.5em (16px); */
+    line-height: 1.5; 
+    font-family: Raleway, Century Gothic, Ubuntu, Arial, sans-serif;
+    color: #727C79;
+
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+img, video {
+	max-width: 100%;
+}
+
+a {
+    color: #727C79;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #272822;
+}
+
+a:active {
+	color: #272822;
+}
+
+a:visited {
+	color: #727C79;
+}
+
+/* ----------------------------------------------------------------------- */
+/* Estilos Gerais: Escritos em ordem de exibição na tela; */
+/* ----------------------------------------------------------------------- */
+
+.container_geral {
+
+	max-width: 1128px;
+    margin: 0 auto;
+}
+
+h2, h3, h4, h5, h6 {
+
+	z-index: 2;
+	color: #727C79;
+	margin-top: 100px;
+	position: absolute;
+	font-family: Raleway, Century Gothic, Ubuntu, Arial, sans-serif;
+}
+
+h1 {
+	
+	color: #555;
+	font-size: 5em;
+	margin-top: 60px;
+	text-align: center;
+	font-family: Raleway;
+}
+
+/* ----------------------- CABEÇALHO ------------------------------------- */
+
+.header {
+
+	z-index: 1;
+	width: 100%;
+	height: 7em;
+	padding-top: 2em;
+	border-bottom: none;
+	background-color: #1B8D58;
+	background-attachment: fixed;
+	background-image: url(../imagens/blocks.png);
+
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.header-colored {
+
+	padding-top: 2em;
+	background-color: #1B8D58;
+}
+
+.logo {
+	
+	float: left;
+	width: 200px;
+	height: 66.666px;
+	margin-top: -1.5em;
+	margin-left: 4.3262411347518%; /* 50px */
+}
+
+.menu {
+
+	float: right;
+	font-size: 1.6em;
+	margin-top: -0.1em;
+	margin-right: 4.3262411347518%; /* 50px */
+}
+
+.menu ul {
+	float: right;
+}
+
+.menu li {
+    margin-left: 0.5em;
+    display: inline-block;
+}
+
+.menu-button {
+
+	color: #C3155C;
+	height: 35px;
+	width: 130px;
+	font-size: 1em;
+	cursor: pointer;
+	border-radius: 5px;
+	font-style: normal;
+	border: 1px solid #fff;
+	background-color: #fff;
+	font-family: Raleway, Century Gothic, Ubuntu, Arial, sans-serif;	
+
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.menu-button:hover {
+	
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+}
+
+/* ----------------------- Cadastro e Login ------------------------------------- */
+
+.text_form {
+
+	color: #333;
+	font-size: 2em;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+.form_box {
+
+	text-align: center;
+}
+
+.form {
+
+	text-align: center;
+	position: relative;
+	font-family: Raleway, Century Gothic, Ubuntu, Arial, sans-serif;
+}
+
+.form_input {
+
+	width: 320px;
+	height: 40px;
+	font-size: 1.5em;
+	text-align: center;
+	margin-bottom: 10px;
+	border: 1px solid #aeaeae;
+	
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.form_input:hover {
+
+	border: 1px solid #585858;
+}
+
+.form_input:focus {
+
+	border: 1px solid #585858;
+	box-shadow: 0px 0px 5px #585858;
+}
+
+.form_button {
+	
+	color: #FFF;
+	height: 40px;
+	width: 158px;
+	font-size: 1.5em;
+	margin-top: 10px;
+	font-style: normal;
+	display: inline-block;
+	background-color: #CA3939;
+	border: 1px solid transparent;
+	
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.form_button:hover {
+
+	color: #CA3939;
+	background-color: #FFF;
+	border: 1px solid #CA3939;
+}
+
+.form_button_big {
+
+	color: #FFF;
+	height: 40px;
+	width: 320px;
+	font-size: 1.5em;
+	background-color: #CA3939;
+	border: 1px solid transparent;
+	
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.form_button_big:hover {
+
+	color: #CA3939;
+	background-color: #FFF;
+	border: 1px solid #CA3939;
+}
+
+.form_warning_red {
+
+	width: 320px;
+	height: 40px;
+	color: #FE2E2E;
+	font-size: 1.5em;
+	padding-top: 8px;
+	margin-bottom: 20px;
+	border: 1px solid #FE2E2E;
+	background-color: #F6CECE;
+}
+
+.form_warning_green {
+
+	width: 320px;
+	height: 40px;
+	color: #088A29;
+	font-size: 1.5em;
+	padding-top: 8px;
+	margin-bottom: 20px;
+	border: 1px solid #088A29;
+	background-color: #BCF5A9;
+}
+
+.link-cad {
+
+	margin-top: 20px;
+	font-size: 1.5em;
+}
+
+.link-cad a {
+
+    color: #CA3939;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.link-cad a:hover {
+
+	color: #CA3939;
+    text-decoration: none;
+}
+
+.link-cad a:active { color: #CA3939; }
+
+.link-cad a:visited { color: #CA3939; }
+
+/* ----------------------- Rodapé da página ------------------------------------- */
+
+.footer {
+
+	color: #fff;
+	height: 250px;
+	margin-top: 15em;
+	font-size: 1.2em;
+	text-align: center;
+	background-color: #333;
+	padding: 40px 100px 40px 100px;
+	
+	background-image: url(../imagens/blocks.png);
+	background-position: center;
+}
+
+/* ----------------------------------------------------------------------- */
+/* Responsividade: Media Queries - Para dispositivos padrão */
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 320px) {
+
+	.container_geral {
+		max-width: 260px;
+	}
+
+	#smartphone {
+		font-size: 0em;
+	}
+	
+	#banner_titulo {
+		padding-top: 120px;
+		font-size: 4em;
+	}
+
+	.menu li button {
+		width: 100px;
+	}
+
+	.banner_button {
+		margin-top: 80px;
+	}
+
+	.box {
+		width: 78.125%; /* 250px; */
+		margin-bottom: 4em;
+		display: block;
+	}
+
+	.about_us {
+		margin-bottom: 18em;
+		text-align: justify;
+	}
+
+	.footer {
+		padding: 20px 20px 20px 20px;
+	}
+}
+	
+@media screen and (min-width: 360px) {
+
+	.container_geral {
+		max-width: 320px;
+	}
+
+	#smartphone {
+		font-size: 0em;
+	}
+	
+	#banner_titulo {
+		padding-top: 120px;
+		font-size: 4em;
+	}
+
+	.box {
+		width: 78.125%; /* 250px; */
+		margin-bottom: 4em;
+		display: block;
+	}
+
+	.about_us {
+		margin-bottom: 18em;
+		text-align: justify;
+	}
+
+	.footer {
+		padding: 20px 20px 20px 20px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.container_geral {
+		max-width: 708px;
+	}
+
+	#smartphone {
+		font-size: 1em;
+	}
+
+	#banner_titulo {
+		font-size: 5em;
+	}
+
+	.box {
+		width: 22.59887005649718%; /* 160px; */
+		margin-bottom: 16em;
+		display: inline-block;
+	}
+
+	.about_us {
+		text-align: center;
+		margin-bottom: 0em;
+	}
+}	
+
+@media screen and (min-width: 800px) {
+
+	.container_geral {
+		max-width: 720px;
+	}
+
+	.box {
+		width:  21.27659574468085%; /* 200px */
+		margin-bottom: 16em;
+	}
+}	
+
+@media screen and (min-width: 980px) {
+
+	.container_geral {
+		max-width: 900px;
+	}
+
+	.banner {
+		background-attachment: inherit;
+	}
+
+	.box {
+		width:  21.27659574468085%; /* 200px */
+		margin-bottom: 10em;
+	}
+}
+
+@media screen and (min-width: 1280px) { 
+	
+	.container_geral {
+		max-width: 1128px;
+	}
+
+	.box {
+		width: 26.59574468085106%; /* 300px */
+		margin-bottom: 4em;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+
+	.container_geral {
+		max-width: 1280px;
+	}
+}

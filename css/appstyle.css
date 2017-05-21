@@ -1,0 +1,1136 @@
+
+/* LOGICANDO - CSS */
+/* Criado por Lucas Duarte */
+
+
+/* Imports de fontes e outros detalhes */
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch);
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+
+/* ----------------------------------------------------------------------
+	Normatização do documento
+/  ---------------------------------------------------------------------- */
+
+body {
+    font-size: 62.5%; /* Colocando o tamanho da fonte padrão igual a 62.5em (16px); */
+    line-height: 1.5; 
+    font-family: Raleway, Century Gothic, Ubuntu, Arial, sans-serif;
+    color: #727C79;
+    background-color: #fff;
+
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img, video {
+	max-width: 100%;
+}
+
+a {
+
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+
+    color: #000;
+}
+
+a:active {
+
+	color: #000;
+}
+
+a:visited {
+
+	color: #000;
+}
+
+/* ----------------------------------------------------------------------
+	Estilos Gerais do CSS: Em ordem de exibição
+/  ---------------------------------------------------------------------- */
+
+.container_geral {
+	/* Esse container vai abrigar todos os outros elementos */
+	max-width: 1128px;
+    margin: 0 auto;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: Raleway, Century Gothic, Ubuntu, Arial, sans-serif;
+	color: #727C79;
+	margin-top: 100px;
+	position: absolute;
+	z-index: 1;
+}
+
+/* ----------------------------------------------------------------------
+	Cabeçalho - Barra de menus
+/  ---------------------------------------------------------------------- */
+
+.header {
+	
+	width: 100%;
+	height: 80px;
+	margin-top: 0em;
+	background-color: #222;
+}
+
+.mini-image-perfil {
+
+	float: left;
+	width: 60px;
+	height: 60px;
+	margin-left: 10px;
+	margin-top: 10px;
+	border-radius: 50%;
+	background-color: #fff;
+}
+
+.image-perfil {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+
+.logo {
+	float: left;
+	margin-left: 10px;
+	width: 200px;
+	height: 66.666px;
+	margin-top: 10px;
+}
+
+.textHeader {
+
+	color: #fff;
+	float: left;
+	font-size: 3em;
+	margin-top: 0.6em;
+	margin-left: 20px;
+	font-family: 'Cabin Sketch', cursive;
+}
+
+.dropbtn {
+
+	margin-right: 50px;
+	margin-top: 23px;
+	color: #fff;
+	width: 160px;
+    height: 35px;
+    background-color: #757ADE;
+    font-family: Raleway, Century Gothic, Ubuntu, Arial, sans-serif;
+    
+    border: none;
+    padding: 0px;
+    font-size: 1.6em;
+    cursor: pointer;
+
+    -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.dropdown {
+
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-right: 50px;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+
+	font-family: Raleway, Century Gothic, Ubuntu, Arial, sans-serif;
+    color: black;
+    padding: 12px 16px;
+    font-size: 1.6em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover { background-color: #f1f1f1 }
+
+.dropdown:hover .dropdown-content { display: block; }
+
+.dropdown:hover .dropbtn { background-color: #757ADE; }
+
+/* ----------------------------------------------------------------------
+	Texto e escrita
+/  ---------------------------------------------------------------------- */
+
+.titleOne {
+
+	color: #333;
+	font-size: 3em;
+	margin-top: 0px;
+	text-align: left;
+	padding-left: 50px;
+	font-family: 'Cabin Sketch', cursive;
+}
+
+.textOne {
+
+	color: #444;
+	font-family: 'Nunito', sans-serif;
+	font-size: 4em;
+	margin-top: 60px;
+	margin-bottom: 0px;
+	text-align: center;
+	
+}
+
+.textTwo {
+
+	color: #333;
+	font-family: Raleway;
+	font-size: 2em;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.textThree {
+
+	color: #333;
+	font-family: Raleway;
+	font-size: 1.5em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.label {
+
+	color: #333;
+	font-family: Raleway;
+	font-size: 1.5em;
+	margin-top: 30px;
+	margin-bottom: 5px;
+	text-align: center;
+	
+}
+
+.box-title {
+	color: #222;
+	font-family: Raleway;
+	font-size: 3em;
+	margin-top: 30px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.box-text {
+	color: #222;
+	font-family: Raleway;
+	font-size: 1.5em;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+/* ----------------------------------------------------------------------
+	Caixas
+/  ---------------------------------------------------------------------- */
+
+.perfil-screen {
+
+	max-width: 1128px;
+    margin: 0 auto;
+}
+
+.big-box {
+
+	width: 400px;
+	height: 500px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px #aeaeae;
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 60px;
+}
+
+.medium-box {
+
+	width: 840px;
+	height: 50px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px #aeaeae;
+	display: block;
+	margin-top: 60px;
+	padding-top: 4px;
+}
+
+.litle-box {
+
+	width: 235px;
+	height: 235px;
+	display: inline-block;
+	border-radius: 100%;
+	margin-top: 10px;
+	background-size: 300px, 260px;
+	background-position: center;
+	
+}
+
+#img_box_1 {
+	background-image: url(../imagens/vetores/cabin.png);
+}
+
+#img_box_2 {
+	background-image: url(../imagens/vetores/submarine.png);
+}
+
+#img_box_3 {
+	background-image: url(../imagens/vetores/rocket.jpg);
+	
+}
+
+#img_box_4 {
+	background-image: url(../imagens/vetores/space.jpg);
+	background-position: top;
+}
+
+.box-button {
+
+	width: 300px;
+	height: 40px;
+	background-color: #757ADE;
+	border: 1px solid transparent;
+	color: #fff;
+	font-family: Raleway;
+	font-size: 1.6em;
+	text-decoration: none;
+
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+.box-button:hover {
+
+	background-color: #757ADE;
+	width: 310px;
+}
+
+.capa-perfil {
+	
+	width: 100%;
+	height: 350px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: #fff;
+	border: 1px solid #333;
+}
+
+#capa-image-girl {
+
+	background-image: url(../imagens/ahri.jpg);	
+}
+
+#capa-image-boy {
+
+	background-image: url(../imagens/corki.jpg);	
+}
+
+.image {
+
+	width: 200px;
+	height: 200px;
+	margin-top: 200px;
+	margin-left: 60px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	background-position: top;
+	cursor: pointer;
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+#perf-image-boy {
+
+	background-image: url(../imagens/perfil/img-boy-1.png);
+}
+
+#perf-image-girl {
+
+	background-image: url(../imagens/perfil/img-girl-1.png);
+}
+
+.boxTextDefinition {
+
+	width: 100%;
+	height: 100px;
+	border: 1px solid #46C9B6;
+	background-color: #CEF6CE;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.boxTextDefinition p {
+
+	color: #296B61;
+	font-family: Raleway;
+	font-size: 2em;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.rodape {
+
+	background-color: #222;
+	margin-top: 100px;
+	padding: 40px 100px 40px 100px;
+	text-align: center;
+	color: #fff;
+	font-size: 1.2em;
+}
+
+/* ----------------------------------------------------------------------
+	Medalhas
+/  ---------------------------------------------------------------------- */
+
+.textMedalha {
+
+	color: #444;
+	font-family: 'Nunito', sans-serif;
+	font-size: 2em;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.textPontos {
+
+	color: #757ADE;
+	font-family: 'Nunito', sans-serif;
+	font-size: 3em;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.div-medalhas {
+	
+	width: 100%; /* 804px */
+	height: 700px;	
+	margin-top: 50px;
+	/* float: right; */
+	display: inline-block;
+}
+
+.place-medalha {
+
+	/* width definido pelas imagens */
+	height: 312px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 50px;
+	display: inline-block;
+}
+
+.medalha-image {
+
+	margin-top: 10px;
+	display: inline-block;
+	border-bottom: 1px solid #aeaeae;
+
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+.medalha-image:hover {
+
+	border-bottom: 6px solid #BABABA;
+}
+
+.button {
+	
+	color: #FFF;	
+	height: 50px;
+	width: 250px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 100px;
+	font-size: 1.5em;
+	font-style: normal;
+	display: inline-block;
+	background-color: #757ADE;
+	border: 1px solid transparent;
+	
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.button:hover {
+
+	color: #757ADE;
+	background-color: #FFF;
+	border: 1px solid #757ADE;
+}
+
+#medalha-ouro {
+
+	background-image: url(../imagens/medalhas/gold.png);
+	width: 312px;
+	height: 312px;
+	background-size: 312px, 312px;
+}
+
+#medalha-prata {
+
+	background-image: url(../imagens/medalhas/silver.png);
+	width: 212px;
+	height: 212px;
+	background-size: 212px, 212px;
+}
+
+/* ----------------------------------------------------------------------
+	RANKING
+/  ---------------------------------------------------------------------- */
+
+.box-ranking {
+
+	width: 100%;
+	height: 500px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px #aeaeae;
+	display: inline-block;
+	margin-top: 60px;
+}
+
+.box-ranking-little {
+
+	width: 100%;
+	height: 50px;
+	display: inline-block;
+	background-size: 100%;
+}
+
+#img_box_1 {
+	background-image: url(../imagens/vetores/cabin.png);
+}
+
+#img_box_2 {
+	background-image: url(../imagens/vetores/submarine.png);
+}
+
+#img_box_3 {
+	background-image: url(../imagens/vetores/rocket.jpg);
+	
+}
+
+#img_box_4 {
+	background-image: url(../imagens/vetores/space.jpg);
+	background-position: top;
+}
+
+.box-button {
+
+	width: 300px;
+	height: 40px;
+	background-color: #757ADE;
+	border: 1px solid transparent;
+	color: #fff;
+	font-family: Raleway;
+	font-size: 1.6em;
+	text-decoration: none;
+
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	-o-transition: all 0.1s;
+	transition: all 0.1s;
+}
+
+.box-button:hover {
+
+	background-color: #757ADE;
+	width: 310px;
+}
+
+/* ----------------------------------------------------------------------
+	Barra Estatísticas
+/  ---------------------------------------------------------------------- */
+
+.img-perf-estatisticas {
+
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	padding-top: 50px;
+	
+}
+
+.div-estatisticas {
+	
+	width: 100%; /* 804px */
+	height: 100px;	
+	margin-top: 50px;
+	/* float: right; */
+	display: inline-block;
+}
+
+.grafico {
+
+	width: 50px;
+	max-height: 250px;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.1);
+
+	/* Fundo listrado */
+    background: repeating-linear-gradient(
+    45deg,
+    #757ADE,
+    #757ADE 10px,
+    #9EA2E7 10px,
+    #9EA2E7 20px
+    );
+}
+
+
+.place-estatistica {
+
+	width: 250px;
+	height: 300px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 50px;
+	display: inline-block;
+}
+
+/* ----------------------------------------------------------------------
+	Formulário
+/  ---------------------------------------------------------------------- */
+
+.form-box {
+
+	margin-top: 120px;
+}
+
+.input {
+	
+	height: 40px;
+	width: 350px;
+	font-size: 1.5em;
+	margin-top: 0px;
+	text-align: center;
+	border: 1px solid #aeaeae;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.input_text {
+	
+	height: 80px;
+	width: 350px;
+	font-size: 1.5em;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	text-align: center;
+	padding-top: 10px;
+	font-family: Raleway;
+	
+	border: 1px solid #aeaeae;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.input:hover {
+
+	border: 1px solid #585858;
+}
+
+.input:focus {
+
+	border: 1px solid #585858;
+	box-shadow: 0px 0px 5px #585858;
+}
+
+.input_text:hover {
+
+	border: 1px solid #585858;
+}
+
+.input_text:focus {
+
+	border: 1px solid #585858;
+	box-shadow: 0px 0px 5px #585858;
+}
+
+.button_form {
+	
+	color: #FFF;	
+	height: 45px;
+	width: 170px;
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 10px;
+	font-size: 1.5em;
+	font-style: normal;
+	display: inline-block;
+	background-color: #4064E4;
+	border: 1px solid transparent;
+	
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.button_form:hover {
+
+	background-color: #46C9B6;
+}
+
+.image-form {
+
+	width: 200px;
+	height: 200px;
+	margin-top: -80px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	background-position: top;
+	cursor: pointer;
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.form_warning_red {
+
+	width: 350px;
+	height: 40px;
+	border: 1px solid #FE2E2E;
+	background-color: #F6CECE;
+	color: #FE2E2E;
+	margin-bottom: 20px;
+	font-size: 1.5em;
+	padding-top: 8px;
+}
+
+.form_warning_green {
+
+	width: 350px;
+	height: 40px;
+	border: 1px solid #088A29;
+	background-color: #BCF5A9;
+	color: #088A29;
+	margin-bottom: 20px;
+	font-size: 1.5em;
+	padding-top: 8px;
+} 
+
+/* ----------------------------------------------------------------------
+	Seleção de atividades
+/  ---------------------------------------------------------------------- */	
+
+.ativ-bar {
+
+	width: 300px;
+	height: 40px;
+	background-color: #f1f1f1;
+	border: 1px solid #aeaeae;
+	display: inline-block;
+	font-family: Raleway;
+	
+}
+
+.ativ-button {
+
+	height: 40px;
+	width: 100px;	
+	color: #fff;
+	font-family: Raleway;
+	background-color: #46C9B6;
+	border: 1px solid transparent;
+	
+	
+}
+
+.dropdown-image {
+    /*position: relative; */
+    display: inline-block;
+}
+
+.dropdown-image-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-image:hover .dropdown-image-content {
+    display: block;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.box-select {
+
+	width: 235px;
+	height: 300px;
+	background-color: #fff;
+	display: inline-block;
+	box-shadow: 0px 0px 10px #aeaeae;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 60px;
+}
+
+.litle-box-select {
+
+	width: 220px;
+	height: 220px;
+	border-radius: 100%;
+	display: inline-block;
+	box-shadow: 0px 0px 10px #aeaeae;
+	background-size: 300px, 300px;
+	background-position: center;
+	margin-top: 15px;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.select-bg-1 { background-image: url(../imagens/vetores/img-gam-1.png); }
+
+.select-bg-2 { background-image: url(../imagens/vetores/img-gam-2.png); }
+
+.select-bg-3 { background-image: url(../imagens/vetores/img-gam-3.png); }
+
+.select-bg-4 { background-image: url(../imagens/vetores/img-gam-4.png); }
+
+.select-bg-5 { background-image: url(../imagens/vetores/img-gam-5.png); }
+
+.select-bg-6 { background-image: url(../imagens/vetores/img-gam-6.png); }
+
+.select-bg-7 { background-image: url(../imagens/vetores/img-tres-green.png); }
+
+.select-bg-8 { background-image: url(../imagens/vetores/img-quatro-green.png); }
+
+.select-bg-1:hover { background-size: 325px, 325px; }
+
+.select-bg-2:hover { background-size: 325px, 325px; }
+
+.select-bg-3:hover { background-size: 325px, 325px; }
+
+.select-bg-4:hover { background-size: 325px, 325px; }
+
+.select-bg-5:hover { background-size: 325px, 325px; }
+
+.select-bg-6:hover { background-size: 325px, 325px; }
+
+.select-bg-7:hover { background-size: 325px, 325px; }
+
+.select-bg-8:hover { background-size: 325px, 325px; }
+
+.barra {
+    
+	width: 400px;
+	left: 50%;
+	padding: 3px;
+	display: block;
+	margin-top: 40px;
+	margin-left: -200px;
+    position: relative;
+    background-color: #eee;
+    
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+    -o-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2)
+}
+
+.carga {
+
+    height: 30px;
+    display: block;
+    border-radius: 3px;
+    /* background-color: cornflowerblue; */
+    background-color: #757ADE;
+    
+    -webkit-transition: width .8s ease;
+    -moz-transition: width .8s ease;
+    -o-transition: width .8s ease;
+    transition: width .8s ease
+}
+
+/* ----------------------------------------------------------------------
+	Screen de atividades
+/  ---------------------------------------------------------------------- */
+
+.title-game-screen {
+
+	color: #444;
+	font-family: 'Nunito', sans-serif;
+	font-size: 3em;
+	margin-top: 50px;
+	margin-bottom: 0px;
+}
+
+.game-screen {
+
+	width: 834px;
+	height: 515px;
+	margin-top: 10px;
+	background-color: #222;
+	border: 1px solid;
+
+}
+
+.game-screen-button {
+
+	width: 250px;
+	height: 60px;
+	background-color: #757ADE;
+	margin: 60px 30px 0px 30px;
+	border: 1px solid transparent;
+	cursor: pointer;
+	color: #fff;	
+	font-family: Raleway;
+	font-size: 1.6em;
+	text-decoration: none;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.game-screen-button:hover {
+
+	background-color: #595EC3;
+}
+
+/* ----------------------------------------------------------------------
+	Páginas 404 e arquivos não encontrados
+/  ---------------------------------------------------------------------- */
+
+.body-404 {
+	
+	background-color: #f1f1f1;
+}
+
+.title-404 {
+
+	font-size: 10em;
+	font-family: Raleway;
+	color: #333;
+	text-align: center;
+}
+
+.text-404-big {
+	font-size: 2em;
+	font-family; Raleway;
+	color: #333;
+	text-align: center;
+}
+
+.text-404-small {
+	font-size: 1em;
+	font-family; Raleway;
+	color: #333;
+	text-align: center;
+}
+
+.box-image-404 {
+	width: 200px;
+	height: 200px;
+	background-image: url(../imagens/vetores/wabafet.png);
+	background-size: 200px, 200px;
+	margin-top: 80px;
+	
+}
+
+/* ----------------------------------------------------------------------
+	Media Queries para dispositivos padrão (mobile first)
+/  ---------------------------------------------------------------------- */
+
+@media screen and (max-width: 320px) {
+
+	.container_geral {
+		max-width: 260px;
+	}
+
+	#smartphone {
+		font-size: 0em;
+	}
+	 
+	#banner_titulo {
+		padding-top: 120px;
+		font-size: 4em;
+	}
+
+	.menu li button {
+		width: 100px;
+	}
+
+	.banner_button {
+		margin-top: 80px;
+	}
+
+	.box {
+		width: 78.125%; /* 250px; */
+		margin-bottom: 4em;
+		display: block;
+	}
+
+	.about_us {
+		margin-bottom: 18em;
+		text-align: justify;
+	}
+
+	.footer {
+		padding: 20px 20px 20px 20px;
+	}
+}
+	
+@media screen and (min-width: 360px) {
+
+	.container_geral {
+		max-width: 320px;
+	}
+
+	#smartphone {
+		font-size: 0em;
+	}
+	
+	#banner_titulo {
+		padding-top: 120px;
+		font-size: 4em;
+	}
+
+	.box {
+		width: 78.125%; /* 250px; */
+		margin-bottom: 4em;
+		display: block;
+	}
+
+	.about_us {
+		margin-bottom: 18em;
+		text-align: justify;
+	}
+
+	.footer {
+		padding: 20px 20px 20px 20px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	.container_geral {
+		max-width: 708px;
+	}
+
+	#smartphone {
+		font-size: 1em;
+	}
+
+	#banner_titulo {
+		font-size: 5em;
+	}
+
+	.box {
+		width: 22.59887005649718%; /* 160px; */
+		margin-bottom: 16em;
+		display: inline-block;
+	}
+
+	.about_us {
+		text-align: center;
+		margin-bottom: 0em;
+	}
+}	
+
+@media screen and (min-width: 800px) {
+
+	.container_geral {
+		max-width: 720px;
+	}
+
+	.box {
+		width:  21.27659574468085%; /* 200px */
+		margin-bottom: 16em;
+	}
+}	
+
+@media screen and (min-width: 980px) {
+
+	.container_geral {
+		max-width: 900px;
+	}
+
+	.banner {
+		background-attachment: inherit;
+	}
+
+	.box {
+		width:  21.27659574468085%; /* 200px */
+		margin-bottom: 10em;
+	}
+}
+
+@media screen and (min-width: 1280px) { 
+	
+	.container_geral {
+		max-width: 1128px;
+	}
+
+	.box {
+		width: 26.59574468085106%; /* 300px */
+		margin-bottom: 4em;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+
+	.container_geral {
+		max-width: 1280px;
+	}
+}
